@@ -27,3 +27,4 @@ Template repository for datascience projects on Jupyterhub
 		* [ ] `make install-kernel name=<some name you like>`
 		* [ ] Restart your server to make the kernel available (File -> Hub Control Panel -> Stop My Server -> Start My Server)
 	* [ ] Then open the example notebook and select your new kernel.
+	* [ ] Open https://rocs-dbt-docs.netlify.app to get an overview of the available raw and preprocessed data.
