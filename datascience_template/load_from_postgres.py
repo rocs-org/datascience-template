@@ -13,6 +13,7 @@ class DBCredentials(TypedDict):
     host: str
     port: int
 
+
 class Connection(psycopg.Connection):
     def __deepcopy__(self, memo):
         return self
@@ -24,7 +25,7 @@ def read_db_credentials_from_env() -> DBCredentials:
         "password": environ.get("POSTGRES_PASSWORD"),
         "dbname": environ.get("POSTGRES_DB"),
         "host": environ.get("POSTGRES_HOST"),
-        "port": int(environ.get("POSTGRES_PORT"))
+        "port": int(environ.get("POSTGRES_PORT")),
     }
 
 
